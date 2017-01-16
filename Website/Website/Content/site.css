@@ -1,0 +1,48 @@
+﻿.body-content {
+    margin-top: 70px;
+}
+
+.panel-header {
+    color: #66757f;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.panel {
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+
+.footer {
+    clear: both;
+    background-color: #e7e7e7;
+    padding-top: 10px;
+}
+
+.footerWrap {
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+/* small resolution */
+@media (min-width: 768px) {
+    .affix {
+        position: initial;
+    }
+}
+
+/* medium resolution */
+@media (min-width: 992px) {
+    .affix {
+        position: fixed;
+    }
+}
+
+/* large resolution */
+@media (min-width: 1200px) {
+
+}
