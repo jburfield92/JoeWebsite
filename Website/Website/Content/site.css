@@ -1,4 +1,20 @@
-﻿.body-content {
+﻿/*
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ////
+    //// File Name: site.css
+    ////
+    //// Date Created: 12/17/2016
+    ////
+    //// Changes:
+    ////
+    //// Date:          Description:
+    //// ----------     ------------
+    //// 12/17/2016     Initial
+    //// 01/29/2017     Added resume-header, resume-table-borderless, and resume-right-aligned
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+.body-content {
     margin-top: 70px;
 }
 
@@ -45,4 +61,30 @@
 /* large resolution */
 @media (min-width: 1200px) {
 
+}
+
+.resume-header
+{
+    text-align: center;
+    padding-bottom: 9px;
+    margin: 20px 0 20px;
+    border-bottom: 1px solid #eee;
+    padding-top: 70px; 
+    margin-top: -70px;
+}
+
+.resume-table-borderless
+{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-right-aligned
+{
+    text-align: right;
+    font-weight: bold;
 }
