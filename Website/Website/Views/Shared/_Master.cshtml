@@ -14,6 +14,7 @@
     //// 12/17/2016     Initial
     //// 02/04/2017     Removed footerWrap, added text-center to footer, modified main panel and contact panel so
     ////                    contact panel is on-top for small browser sizes, to right on larger, main panel is centered always
+    //// 02/05/2017     Removed blog link
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 *@
 
@@ -38,7 +39,6 @@
             <div class="navbar-collapse collapse" id="NavBarLinks">
                 <ul class="nav navbar-nav">
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Blog" ? "active" : "")">@Html.ActionLink("Blog", "Blog", "Blog")</li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Projects" ? "active" : "")">@Html.ActionLink("Projects", "Projects", "Home")</li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Resume" ? "active" : "")">@Html.ActionLink("Resume", "Resume", "Home")</li>
                 </ul>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="row">
                             <a href="https://twitter.com/aznjoee" class="ContactLink">
-                                <img src="~/Images/Twitter_Logo_Blue.png" width="20" height="20" alt="View my twitter" style="vertical-align:middle;" border="0" />View My twitter
+                                <img src="~/Images/Twitter_Logo_Blue.png" width="20" height="20" alt="View my twitter" style="vertical-align:middle;" border="0" />View My Twitter
                             </a>
                         </div>
                         <div class="row">
