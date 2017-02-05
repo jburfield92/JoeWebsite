@@ -11,6 +11,7 @@
     //// ----------     ------------
     //// 12/17/2016     Initial
     //// 01/29/2017     Added content
+    //// 02/04/2017     Fixed nested list items, unallcaps resume headers, changed resume-header css to body-header
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 *@
 
@@ -20,7 +21,7 @@
 
 <!-- EDUCATION -->
     
-<h4 class="resume-header" id="Education">EDUCATION</h4>
+<h4 class="body-header" id="Education">Education</h4>
 
 <b>University of Central Florida</b>
 <br />
@@ -32,7 +33,7 @@
 <!-- RELEVANT COURSEWORK -->
 
 <br />
-<h4 class="resume-header" id="RelevantCoursework">RELEVANT COURSEWORK</h4>
+<h4 class="body-header" id="RelevantCoursework">Relevant Coursework</h4>
 
 <table class="table table-striped">
     <thead>
@@ -134,7 +135,7 @@
 
 <!-- LANGUAGES AND TECHNOLGIES -->
 
-<h4 class="resume-header" id="LanguagesAndTechnologies">LANGUAGES AND TECHNOLOGIES</h4>
+<h4 class="body-header" id="LanguagesAndTechnologies">Languages and Technologies</h4>
 <b>Languages (in no particular order):</b> C#, Java, C, ASP.NET, MS SQL, HTML, CSS, JavaScript, XML
 <br />
 <b>Tools (in no particular order):</b> Visual Studio 2012 - 2015, SQL Server Management Studio 2008 - 2014, AccuRev and GitHub (version control), Code Collaborator (Code Review software),
@@ -146,7 +147,7 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
 <!-- WORK EXPERIENCE -->
 
 <br />
-<h4 class="resume-header" id="WorkExperience">WORK EXPERIENCE</h4>
+<h4 class="body-header" id="WorkExperience">Work Experience</h4>
 
 <table class="resume-table-borderless">
     <tr>
@@ -160,18 +161,22 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
     <tr>
         <td colspan="2">
             <ul>
-                <li>Completed development of the initial release of the web portal interface project started in Summer Internship.</li>
-                <ul>
-                    <li>Completed 60+ requirements and managed the database which has 80+ tables, 300+ stored procedures, and 8+ views.</li>
-                    <li>Developed a Windows Service designed to keep the web portal and AccuRev repository synced.</li>
-                    <li>Trained and supervised an intern tasked with 8 requirements to increase UX throughout the web portal.</li>
-                    <li>Passed User Acceptance Testing and successfully deployed web portal to production on an internal IIS server.</li>
-                </ul>
-                <li>Completed development of a proof of concept, Unity3D and HoloLens project, aimed at increasing the productivity of the logistical workforce.</li>
-                <ul>
-                    <li>Used Unity3D and C# to develop scripts for the project.</li>
-                    <li>Used GIMP and Blender to build the UI and models.</li>
-                </ul>
+                <li>
+                    Completed development of the initial release of the web portal interface project started in Summer Internship.
+                    <ul>
+                        <li>Completed 60+ requirements and managed the database which has 80+ tables, 300+ stored procedures, and 8+ views.</li>
+                        <li>Developed a Windows Service designed to keep the web portal and AccuRev repository synced.</li>
+                        <li>Trained and supervised an intern tasked with 8 requirements to increase UX throughout the web portal.</li>
+                        <li>Passed User Acceptance Testing and successfully deployed web portal to production on an internal IIS server.</li>
+                    </ul>
+                </li>
+                <li>
+                    Completed development of a proof of concept, Unity3D and HoloLens project, aimed at increasing the productivity of the logistical workforce.
+                    <ul>
+                        <li>Used Unity3D and C# to develop scripts for the project.</li>
+                        <li>Used GIMP and Blender to build the UI and models.</li>
+                    </ul>
+                </li>
             </ul>
         </td>
     </tr>
@@ -182,11 +187,13 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
     <tr>
         <td colspan="2">
             <ul>
-                <li>Continued development of the web portal interface project from Summer Internship with a focus on the front-end.</li>
-                <ul>
-                    <li>Overhauled UI using Bootstrap 3.</li>
-                    <li>Completed 9 requirements which mostly involved developing management forms and increasing UX of the web portal.</li>
-                </ul>
+                <li>
+                    Continued development of the web portal interface project from Summer Internship with a focus on the front-end.
+                    <ul>
+                        <li>Overhauled UI using Bootstrap 3.</li>
+                        <li>Completed 9 requirements which mostly involved developing management forms and increasing UX of the web portal.</li>
+                    </ul>
+                </li>
             </ul>
         </td>
     </tr>
@@ -197,12 +204,14 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
     <tr>
         <td colspan="2">
             <ul>
-                <li>Development of a web portal interface for user submission and visualization of a logistics system’s issues to the software development team’s AccuRev version control repository.</li>
-                <ul>
-                    <li>Used C#, ASP.NET and SQL to develop a web portal to interface to AccuRev using XML and the Command Line Interface.</li>
-                    <li>Met aggressive task schedule faster than expected (Completed 16 requirements when 10 was expected).</li>
-                    <li>Participated in the software development life cycle through requirements analysis and design, participating in code reviews, weekly team meetings, and utilizing AccuRev for version control management.</li>
-                </ul>
+                <li>
+                    Development of a web portal interface for user submission and visualization of a logistics system’s issues to the software development team’s AccuRev version control repository.
+                    <ul>
+                        <li>Used C#, ASP.NET and SQL to develop a web portal to interface to AccuRev using XML and the Command Line Interface.</li>
+                        <li>Met aggressive task schedule faster than expected (Completed 16 requirements when 10 was expected).</li>
+                        <li>Participated in the software development life cycle through requirements analysis and design, participating in code reviews, weekly team meetings, and utilizing AccuRev for version control management.</li>
+                    </ul>
+                </li>
             </ul>
         </td>
     </tr>
@@ -311,7 +320,7 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
 
 <!-- VOLUNTEER EXPERIENCE -->
 
-<h4 class="resume-header" id="VolunteerExperience">VOLUNTEER EXPERIENCE</h4>
+<h4 class="body-header" id="VolunteerExperience">Volunteer Experience</h4>
 <table class="resume-table-borderless">
     <tr>
         <td><b>North Branch Library </b></td>
@@ -333,7 +342,7 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
 
 <!-- PROJECTS -->
 
-<h4 class="resume-header" id="Projects">PROJECTS</h4>
+<h4 class="body-header" id="Projects">Projects</h4>
 
 <table class="resume-table-borderless">
     <tr>
@@ -418,7 +427,7 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
 
 <!-- CAMPUS INVOLVEMENT SECTION -->
 
-<h4 class="resume-header" id="CampusInvolvement">CAMPUS INVOLVEMENT</h4>
+<h4 class="body-header" id="CampusInvolvement">Campus Involvement</h4>
 
 <table class="resume-table-borderless">
     <tr>
@@ -462,7 +471,7 @@ Windows Command Prompt, Windows Power Shell, Microsoft Office 2007 - 2016 (word,
 
 <!-- HOBBIES SECTION -->
 
-<h4 class="resume-header" id="Hobbies">HOBBIES</h4>
+<h4 class="body-header" id="Hobbies">Hobbies</h4>
 
 <ul>
     <li>Video gaming (PS4 / PC)</li>

@@ -12,6 +12,8 @@
     //// Date:          Description:
     //// ----------     ------------
     //// 12/17/2016     Initial
+    //// 02/04/2017     Removed footerWrap, added text-center to footer, modified main panel and contact panel so
+    ////                    contact panel is on-top for small browser sizes, to right on larger, main panel is centered always
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 *@
 
@@ -45,77 +47,52 @@
     </div>
     <div class="container body-content">
         <div class="form-group">
-            <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        @RenderBody()
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-lg-push-10 col-sm-12 col-md-3 col-md-push-10">
                 <div class="panel panel-default" data-spy="affix" data-offset-top="100">
                     <div class="panel-body">
                         <div class="row">
                             <span class="panel-header">Contact</span>
                         </div>
                         <div class="row">
-                            <strong><span class="form-control-static">Email:</span></strong>
-                            <span>jburfield92@gmail.com</span>
+                            <a href="mailto:jburfield92@gmail.com" class="ContactLink">
+                                <span class="glyphicon glyphicon-envelope" style="color: #0783B6; font-size:14px;"></span>&nbsp;jburfield92@gmail.com
+                            </a>
                         </div>
                         <div class="row">
-                            <strong><span class="form-control-static">LinkedIn:</span></strong>
-                            <span>
-                                <a href="https://www.linkedin.com/pub/joseph-burfield/93/911/b51" style="text-decoration:none;">
-                                    <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                                        <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View My LinkedIn profile" style="vertical-align:middle;" border="0" />
-                                        &nbsp;View my profile
-                                    </span>
-                                </a>
-                            </span>
+                            <a href="https://www.linkedin.com/pub/joseph-burfield/93/911/b51" class="ContactLink">
+                                <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View My LinkedIn profile" style="vertical-align:middle;" border="0" />View My LinkedIn profile
+                            </a>
                         </div>
                         <div class="row">
-                            <strong><span class="form-control-static">Stackoverflow:</span></strong>
-                            <span>
-                                <a href="http://stackoverflow.com/users/3330452/aznjoe" style="text-decoration:none;">
-                                    <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                                        <img src="~/Images/so-icon.png" width="20" height="20" alt="View my Stackoverflow Profile" style="vertical-align:middle;" border="0" />
-                                        &nbsp;View my profile
-                                    </span>
-                                </a>
-                            </span>
+                            <a href="http://stackoverflow.com/users/3330452/aznjoe" class="ContactLink">
+                                <img src="~/Images/so-icon.png" width="20" height="20" alt="View my Stackoverflow Profile" style="vertical-align:middle;" border="0" />View My Stackoverflow Profile
+                            </a>
                         </div>
                         <div class="row">
-                            <strong><span class="form-control-static">Twitter:</span></strong>
-                            <span>
-                                <a href="https://twitter.com/aznjoee" style="text-decoration:none;">
-                                    <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                                        <img src="~/Images/Twitter_Logo_Blue.png" width="20" height="20" alt="View my twitter" style="vertical-align:middle;" border="0" />
-                                        &nbsp;View my twitter
-                                    </span>
-                                </a>
-                            </span>
+                            <a href="https://twitter.com/aznjoee" class="ContactLink">
+                                <img src="~/Images/Twitter_Logo_Blue.png" width="20" height="20" alt="View my twitter" style="vertical-align:middle;" border="0" />View My twitter
+                            </a>
                         </div>
                         <div class="row">
-                            <strong><span class="form-control-static">YouTube Channel:</span></strong>
-                            <span>
-                                <a href="https://www.youtube.com/channel/UCmCUfE7uFkhXYtkzvUNHblg" style="text-decoration:none;">
-                                    <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                                        <img src="~/Images/YouTube-logo-full_color.png" width="20" height="20" alt="View my YouTube Channel" style="vertical-align:middle;" border="0" />
-                                        &nbsp;View my YouTube Channel
-                                    </span>
-                                </a>
-                            </span>
+                            <a href="https://www.youtube.com/channel/UCmCUfE7uFkhXYtkzvUNHblg" class="ContactLink">
+                                <img src="~/Images/YouTube-logo-full_color.png" width="35" height="25" alt="View my YouTube Channel" style="vertical-align:middle;" border="0" />View My YouTube Channel
+                            </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-pull-2 col-md-8 col-md-pull-1 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        @RenderBody()
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        <div class="footerWrap">
-            &copy; @DateTime.Now.Year - Joe Burfield Personal Website
-        </div>
+    <div class="footer text-center">
+        &copy; @DateTime.Now.Year - Joe Burfield Personal Website
     </div>
 
     @Scripts.Render("~/bundles/jquery")
