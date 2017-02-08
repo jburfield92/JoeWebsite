@@ -10,6 +10,7 @@
     //// Date:          Description:
     //// ----------     ------------
     //// 12/17/2016     Initial
+    //// 02/07/2017     Added initial navigation section and project content
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 *@
 
@@ -17,5 +18,320 @@
     ViewBag.Title = "Projects";
 }
 
-<h2>Projects</h2>
+@section Navigation {
+    <div class="panel panel-default">
+        <div class="panel-body">
+            TEST
+        </div>
+    </div>
+}
 
+<h4 class="body-header">
+    My own blog website
+    <br /><small>Personal Project</small>
+</h4>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Development Period:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>November 2016 to Present</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Team:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Joseph Burfield (solo)</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Languages:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>ASP.NET MVC, C#, SQL, HTML5, CSS, JavaScript</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Tools/Technologies:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Visual Studio 2015, SQL Server Management Studio 2014, GitHub, Bootstrap 3, ASP.NET MVC</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Description:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>
+            Personal project being developed to be a blog and to showcase my projects and resume. First project built using ASP.NET MVC.
+            Uses Google Adsense across the site, Blog has management form and Facebook Comments API. Used GitHub as the version control (LINK).
+            For more info, look at the GitHub repo or just expore this site :)
+        </h5>
+    </div>
+</div>
+
+<br />
+
+<h4 class="body-header">
+    Chemical Safety Simulation Game
+    <br /><small>Senior Design Project</small>
+</h4>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Development Period:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>January 2015 to December 2015</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Team:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Joseph Burfield (Team Leader)</h5>
+        <h5>David Gundler</h5>
+        <h5>Jacob Duckett</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Languages:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>C#, SQL, HTML</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Tools/Technologies:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Unity3D 5, Visual Studio 2015, SQL Server Management Studio 2014, GitHub, 3DS Max 2016, Adobe Photoshop CS6, Microsoft Visio 2014</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Description:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>
+            3D Video Game that trains the user in basic chemical safety and knowledge of Hazard Symbols and Safety Data Sheets. Built using Unity3D 5, with C# as the scripting language.
+            Meant to be published to a Website using the Unity Web Player. Had a SQL database for basic user info and authentication and a Web Portal built with ASP.NET Webforms to access the game.
+            I acted as the team leader by scheduling and running meetings, making decisions on game design, designing models and art, and assigning tasks. I built the database and Web Portal and created some scripts.
+            Was a 3 semester long project delivered to a client and had a Software Requirements Specification document.
+        </h5>
+    </div>
+</div>
+
+<br />
+
+<h4 class="body-header">
+    College Event Website
+    <br /><small>Undergraduate Course Project</small>
+</h4>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Development Period:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5><b>August 2015 to December 2015</b></h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Team:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Joseph Burfield (Team Leader)</h5>
+        <h5>David Gundler</h5>
+        <h5>Jacob Duckett</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Languages:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>C#, SQL, ASP.NET, HTML, CSS</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Tools/Technologies:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Visual Studio 2015, SQL Server Management Studio 2014, GitHub, Bootstrap 3, Google Maps JavaScript API, ASP.NET Webforms</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Description:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>
+            1 Semester long course project for the Undergraduate course: Database Systems. Made with the same team as my Senior Design project. Project is a ASP.NET website with a MS SQL database.
+            Website is meant to be a college club event website where students can make groups and create events. The students can join groups, join events, make comments on events and see events in their
+            area.
+        </h5>
+    </div>
+</div>
+
+<br />
+
+<h4 class="body-header">
+    UCF Express Ride
+    <br /><small>Graduate Course Project</small>
+</h4>
+<hr />
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Development Period:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>January 2015 to April 2015</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Team:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Joseph Burfield</h5>
+        <h5>4 Others (don't remember their names)</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Languages:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>HTML, CSS, JavaScript, PHP, MySQL</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Tools/Technologies:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Notepad++, MySQL Workbench, Bootstrap 3, Google Maps JavaScript API</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Description:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>
+            1 Semester long course project for the Graduate course: Software Engineering. 5 person team that developed a HTML, CSS and PHP website with a MySQL backend.
+            Website is meant to be a application for students to crowdsource carpooling services (similar to Uber or Lyft), just for UCF college students. Uses basic
+            authentication and logic to verify UCF student status and valid driver's license ownership, as well as the PayPal payment API for driver payment, and Google Maps
+            JavaScript API for driver and passenger locating.
+        </h5>
+    </div>
+</div>
+
+<br />
+
+<h4 class="body-header">
+    SmartCal
+    <br /><small>Undergraduate Course Project</small>
+</h4>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Development Period:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>August 2014 to December 2014</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Team:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Joseph Burfield</h5>
+        <h5>4 Others (Don't remember their names)</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Languages:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>C#, MS SQL</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Tools/Technologies:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Visual Studio 2013, SQL Server Management Studio 2012, GitHub, .NET Winforms</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Description:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>
+            1 Semester long course project for the Undergraduate course: Object Oriented Software Development. Project is a C# .NET Winforms application meant to allow users create a calendar/schedule, and uses
+            a basic AI to suggest future weeks to the user.
+        </h5>
+    </div>
+</div>
+
+<br />
+
+<h4 class="body-header">
+    PL/0 Compiler
+    <br /><small>Undergraduate Course Project</small>
+</h4>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Development Period:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>January 2014 to May 2014</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Team:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Joseph Burfield (Solo)</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Languages:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>C</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Tools/Technologies:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>Codeblocks</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h5><b>Description:</b></h5>
+    </div>
+    <div class="col-md-9">
+        <h5>
+            1 Semester long course project for the Undergraduate course: Systems Software. The project was a solo C application meant to be a basic compiler for the PL/0 language.
+        </h5>
+    </div>
+</div>
