@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+@*
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ////
+    //// File Name: _Layout.cshtml
+    ////
+    //// Date Created: 12/17/2016
+    ////
+    //// Changes:
+    ////
+    //// Date:          Description:
+    //// ----------     ------------
+    //// 12/17/2016     Initial
+    //// 02/04/2017     Removed footerWrap, added text-center to footer, modified main panel and contact panel so
+    ////                    contact panel is on-top for small browser sizes, to right on larger, main panel is centered always
+    //// 02/05/2017     Removed blog link
+    //// 02/07/2017     Moves scripts to top, added navigation section to affix side bar
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+*@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#NavBarLinks" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="NavBarLinks">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Projects" ? "active" : "")">@Html.ActionLink("Projects", "Projects", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Resume" ? "active" : "")">@Html.ActionLink("Resume", "Resume", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div class="form-group">
+            <div class="col-lg-3 col-lg-push-10 col-md-3 col-md-push-10 col-sm-12">
+                <div data-spy="affix" data-offset-top="100">
+                    <div class="panel Contact-Panel Email-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="mailto:jburfield92@gmail.com" class="Contact-Link">
+                                    <i class="fa fa-at" aria-hidden="true"></i>EMAIL ME
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel Contact-Panel Linkedin-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="https://www.linkedin.com/in/jburfield" class="Contact-Link">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i><span class="hidden-md">LINK UP ON </span>LINKEDIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel Contact-Panel Stackoverflow-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="http://stackoverflow.com/u/3330452" class="Contact-Link">
+                                    <i class="fa fa-stack-overflow" aria-hidden="true"></i><span class="hidden-md">VIEW MY </span>STACKOVERFLOW
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel Contact-Panel Twitter-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="https://twitter.com/aznjoee" class="Contact-Link">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i><span class="hidden-md">FOLLOW ON </span>TWITTER
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel Contact-Panel Youtube-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="https://www.youtube.com/channel/UCmCUfE7uFkhXYtkzvUNHblg" class="Contact-Link">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i><span class="hidden-md">VIEW MY </span>YOUTUBE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel Contact-Panel Facebook-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="https://www.facebook.com/jburfield92" class="Contact-Link">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i><span class="hidden-md">FOLLOW ME ON </span>FACEBOOK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel Contact-Panel Instagram-Panel">
+                        <div class="panel-body Contact-Panel-Body">
+                            <div class="row">
+                                <a href="https://www.instagram.com/aznjoee/" class="Contact-Link">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i><span class="hidden-md">FOLLOW ME ON </span>INSTAGRAM
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    @RenderSection("Navigation")
+                </div>
+            </div>
+            <div class="col-lg-9 col-lg-pull-2 col-md-8 col-md-pull-1 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        @RenderBody()
+                    </div>
+                </div>
+                <div class="footer text-center">
+                    &copy; @DateTime.Now.Year - Joe Burfield Personal Website
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

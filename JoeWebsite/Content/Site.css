@@ -1,0 +1,193 @@
+﻿/*
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ////
+    //// File Name: site.css
+    ////
+    //// Date Created: 12/17/2016
+    ////
+    //// Changes:
+    ////
+    //// Date:          Description:
+    //// ----------     ------------
+    //// 12/17/2016     Initial
+    //// 01/29/2017     Added resume-header, resume-table-borderless, and resume-right-aligned
+    //// 02/04/2017     Added body css, changed color of panel-header to blue, removed footerWrap css, added bottom border to navbar class, 
+    ////                    made affix width same as non-affix when in lg size, changed resume-header to body-header and changed color to blue,
+    ////                    added bottom border inset to navbar links, made navbar links center aligned. Added ContactLink
+    //// 02/07/2017     Added ContactLink hover, ContactRow and fa classes, darkened color of bottom border for body-header
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+body {
+    background-color: #fff;
+}
+
+/* Bootstrap Overrides */
+
+.navbar {
+    border-bottom: 1px solid #aaa;
+}
+
+@media (min-width: 768px) {
+    .affix {
+        position: initial;
+    }
+}
+
+@media (min-width: 992px) {
+    .affix {
+        position: fixed;
+        width: 19.2%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #333333;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #2091E0;
+    box-shadow: inset 0px -6px 0px #2091E0; 
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #2091E0;
+    box-shadow: inset 0px -6px 0px #2091E0; 
+}
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 48%;
+    transform: translatex(-52%);
+  }
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 5px;
+    color: #ffffff;
+    font-size: 18px !important;
+}
+
+.panel-header {
+    color: #2091E0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.panel {
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: -15px;
+    border-color: #aaa;
+}
+
+/* Custom CSS */
+
+.body-content {
+    margin-top: 70px;
+}
+
+.body-header
+{
+    text-align: center;
+    padding-bottom: 9px;
+    margin: 20px 0 20px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 70px; 
+    margin-top: -70px;
+    color: #2091E0;
+}
+
+.resume-table-borderless
+{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-right-aligned
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.footer {
+    padding-bottom: 20px;
+}
+
+.Contact-Link {
+    font: 90% Arial,sans-serif; 
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.Contact-Link:hover {
+    text-decoration: none;
+}
+
+.Contact-Panel {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 0px;
+}
+
+@media (max-width: 991px) {
+    .Contact-Panel-Body {
+        text-align: center;
+    }
+}
+
+.Contact-Panel-Body {
+    padding: 5px;
+}
+
+.Stackoverflow-Panel {
+    background-color: #F48024;
+}
+
+.Email-Panel {
+    margin-top: 0px;
+    background-color: #808080;
+}
+
+.Linkedin-Panel {
+    background-color: #0077B5;
+}
+
+.Twitter-Panel {
+    background-color: #55ACEE;
+}
+
+.Youtube-Panel {
+    background-color: #E62117;
+}
+
+.Instagram-Panel {
+    background-color: #cd486b;
+}
+
+.Facebook-Panel {
+    background-color: #3B5999;
+}

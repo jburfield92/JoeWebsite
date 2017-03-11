@@ -1,0 +1,27 @@
+﻿@*
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    ////
+    //// File Name: ConfirmEmail.cshtml
+    ////
+    //// Date Created: 03/08/2017
+    ////
+    //// Changes:
+    ////
+    //// Date:          Description:
+    //// ----------     ------------
+    //// 03/08/2017     Initial
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+*@
+
+@section Navigation {}
+
+@{
+    ViewBag.Title = "Confirm Email";
+}
+
+<h2>@ViewBag.Title.</h2>
+<div>
+    <p>
+        Thank you for confirming your email. Please @Html.ActionLink("Click here to Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+    </p>
+</div>
