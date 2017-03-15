@@ -9,10 +9,12 @@
 //// Date:          Description:
 //// ----------     ------------
 //// 12/17/2016     Initial
+//// 03/14/2016     Updated model to have foreignkey relationship
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JoeWebsite.Models
 {
@@ -22,7 +24,7 @@ namespace JoeWebsite.Models
     {
         [Key]
         [Required]
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public byte[] Content { get; set; }
@@ -32,7 +34,11 @@ namespace JoeWebsite.Models
         
         [Required]
         public bool IsCoverImage { get; set; }
+        
+        [ForeignKey("Blog")]
+        public int BlogId { get; set; }
 
-        public int idBlog { get; set; }
+        [Required]
+        public Blog Blog { get; set; }
     }
 }

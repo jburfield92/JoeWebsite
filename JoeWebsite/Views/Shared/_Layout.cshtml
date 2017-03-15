@@ -16,6 +16,7 @@
     ////                    contact panel is on-top for small browser sizes, to right on larger, main panel is centered always
     //// 02/05/2017     Removed blog link
     //// 02/07/2017     Moves scripts to top, added navigation section to affix side bar
+    //// 03/14/2016     Added Renders for Telerik UI and open sans font
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 *@
 
@@ -27,7 +28,10 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("~/Content/Kendo/css")
+    @Scripts.Render("~/bundles/Kendo")
     @RenderSection("scripts", required: false)
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">

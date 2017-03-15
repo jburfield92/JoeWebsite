@@ -1,6 +1,6 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
 ////
-//// File Name: BlogModel.cs
+//// File Name: Blog.cs
 ////
 //// Date Created: 12/17/2016
 ////
@@ -9,11 +9,12 @@
 //// Date:          Description:
 //// ----------     ------------
 //// 12/17/2016     Initial
+//// 03/14/2016     Updated model to have foreignkey relationship
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JoeWebsite.Models
 {
@@ -34,11 +35,13 @@ namespace JoeWebsite.Models
 
         [Required]
         public DateTime LastUpdate { get; set; }
+        
+        [ForeignKey("Category")]
+        public int CategoryId { get; set; }
 
         [Required]
-        public Category PostCategory { get; set; }
-
-        public List<Image> Images { get; set; }
+        [Display(Name = "Category")]
+        public Category Category { get; set; }
 
         [Required]
         [Display(Name = "Blog Content")]

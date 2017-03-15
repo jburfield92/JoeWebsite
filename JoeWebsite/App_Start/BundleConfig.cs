@@ -9,6 +9,7 @@
 //// Date:          Description:
 //// ----------     ------------
 //// 03/08/2017     Initial
+//// 03/14/2017     Added telerik bundle includes
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System.Web.Optimization;
@@ -42,6 +43,16 @@ namespace JoeWebsite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css").Include("~/Content/font-awesome.css", new CssRewriteUrlTransform()));
+
+            bundles.Add(new ScriptBundle("~/bundles/Kendo").Include(
+                "~/Scripts/Kendo/kendo.all.min.js",
+                "~/Scripts/Kendo/kendo.aspnetmvc.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/Kendo/css").Include(
+                "~/Content/Kendo/kendo.common-bootstrap.min.css",
+                "~/Content/Kendo/kendo.bootstrap.min.css"));
+
+            bundles.IgnoreList.Clear();
         }
     }
 }
